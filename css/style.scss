@@ -329,6 +329,9 @@ header {
       .tel{
         padding: 12px 0 8px;
       }
+      & > p{
+        position: relative;
+      }
     }
 
     .in_hospital {
@@ -358,7 +361,7 @@ header {
         }
 
         p span {
-          font-size: 4.5em;
+          font-size: 4em;
         }
 
     }

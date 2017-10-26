@@ -29,20 +29,20 @@ $(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > $('header').height()) {
       if ($(this).innerWidth() <= 768) {
-      if (showFlag === false) {
-        showFlag = true;
-        $pageTop.stop().fadeIn();
+        if (showFlag === false) {
+          showFlag = true;
+          $pageTop.stop().fadeIn();
+        }
+      } else if ($(this).innerWidth() >= 768) {
+        if (showFlag === false) {
+          showFlag = true;
+          $pageTopPc.stop().fadeIn();
+        }
       }
-    } else if ($(this).innerWidth() >= 768) {
-      if (showFlag === false) {
-        showFlag = true;
-        $pageTopPc.stop().fadeIn();
-      }
-    }
-  } else {
+    } else {
       if (showFlag) {
         showFlag = false;
-        $pageTopPc.stop().fadeOut();
+        $pageTop.stop().fadeOut();
         $pageTopPc.stop().fadeOut();
       }
     }
