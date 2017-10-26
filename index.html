@@ -8,12 +8,15 @@
   <title>高橋歯科医院池袋</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i" rel="stylesheet">
 </head>
 
 <body>
   <div class="wrapper">
     <header>
+      <div class="bg-slider"></div>
+      <!-- /.bg-slider -->
       <div class="gradient">
         <p class="message">新宿、池袋の歯医者なら高橋歯科医院池袋へ</p>
         <!-- /.message -->
@@ -26,13 +29,13 @@
         <!-- /.logo -->
         <h1 class="clearfix">高橋歯科医院池袋<span>Takahashi Dental Clinic Ikebukuro</span></h1>
 
-      <div class="caption">
-        <p><span>新患・急患随時受付</span></p>
-        <p><span>各種保険取扱</span></p>
+        <div class="caption">
+          <p><span>新患・急患随時受付</span></p>
+          <p><span>各種保険取扱</span></p>
+        </div>
+        <!-- /.caption -->
       </div>
-      <!-- /.caption -->
-    </div>
-    <!-- /.gradient -->
+      <!-- /.gradient -->
       <div class="address">
         <p>
           <span>〒171-0032 東京都豊島区池袋1-11-1</span>
@@ -45,34 +48,45 @@
       </div>
       <!-- /.address -->
       <div class="right">
-      <div class="reservation">
-        <a href="tel:0000000000">
-          <div class="tel">
-            <p>ご予約・お問い合わせはこちら</p>
-            <p>03-1234-5678</p>
-          </div>
-          <!-- /.tel -->
-        </a>
-      <p><a href="#">Web予約はこちら</a></p>
-    </div>
-    <!-- /.reservation -->
-      <div class="in_hospital">
-        <p>
-          <span>車いす対応</span>
-          <span>個室診療室</span>
-        </p>
-        <p>
-          <span>歯科用CT</span>
-          <span>セファログラム</span>
-        </p>
+        <div class="reservation">
+          <a href="tel:0000000000">
+            <div class="tel">
+              <p>ご予約・お問い合わせはこちら</p>
+              <p>03-1234-5678</p>
+            </div>
+            <!-- /.tel -->
+          </a>
+          <p><a href="#">Web予約はこちら</a></p>
+        </div>
+        <!-- /.reservation -->
+        <div class="in_hospital">
+          <p>
+            <span>車いす対応</span>
+            <span>個室診療室</span>
+          </p>
+          <p>
+            <span>歯科用CT</span>
+            <span>セファログラム</span>
+          </p>
+        </div>
+        <!-- /.in_hospital -->
       </div>
-      <!-- /.in_hospital -->
-    </div>
-    <!-- /.right -->
-    <div class="clear"></div>
-    <!-- /.clear -->
+      <!-- /.right -->
+      <div class="clear"></div>
+      <!-- /.clear -->
       <div class="picture">
-        <img src="./images/mobile/header@2x.png" alt="診療室">
+        <div class="slide">
+        <picture>
+            <img src="./images/mobile/header.png" srcset="./images/mobile/header@2x.png 2x" alt="診療室">
+        </picture>
+        <picture>
+            <img src="./images/mobile/header2.png" srcset="./images/mobile/header2@2x.png 2x" alt="治療風景">
+        </picture>
+        <picture>
+            <img src="./images/mobile/header3.png" srcset="./images/mobile/header3@2x.png 2x" alt="診療室">
+        </picture>
+      </div>
+      <!-- /.slide -->
         <p>
           <span>4代続く</span>
           <span>厚い信頼を</span>
@@ -80,14 +94,8 @@
         </p>
       </div>
       <!-- /.picture -->
-      <div class="words">
-        <p>4代続く</p>
-        <p>厚い信頼を</p>
-        <p>雑司が谷の皆様へ</p>
-      </div>
-      <!-- /.words -->
       <div class="discus">
-          <img src="./images/mobile/banner.png" srcset="./images/mobile/banner@2x.png 2x" alt="無料矯正相談">
+        <img src="./images/mobile/banner.png" srcset="./images/mobile/banner@2x.png 2x" alt="無料矯正相談">
       </div>
       <!-- /.discus -->
       <div id="ham_menu">
@@ -181,7 +189,7 @@
           <div class="flex_inner1">
             <div class="box1">
               <p>
-                  <img src="./images/mobile/six_strong/sefalo_1.png" srcset="./images/mobile/six_strong/sefalo_1@2x.png 2x" alt="セファログラム">
+                <img src="./images/mobile/six_strong/sefalo_1.png" srcset="./images/mobile/six_strong/sefalo_1@2x.png 2x" alt="セファログラム">
               </p>
               <div class="strong1">
                 <p>1</p>
@@ -202,7 +210,7 @@
             <!-- /.box1 -->
             <div class="box2">
               <p>
-                  <img src="./images/mobile/six_strong/varia_free.png" srcset="./images/mobile/six_strong/varia_free@2x.png 2x" alt="車いす対応">
+                <img src="./images/mobile/six_strong/varia_free.png" srcset="./images/mobile/six_strong/varia_free@2x.png 2x" alt="車いす対応">
               </p>
               <div class="strong2">
                 <p>2</p>
@@ -223,7 +231,7 @@
             <!-- /.box2 -->
             <div class="box3">
               <p>
-                  <img src="./images/mobile/six_strong/room.png" srcset="./images/mobile/six_strong/room@2x.png 2x" alt="個室診療室">
+                <img src="./images/mobile/six_strong/room.png" srcset="./images/mobile/six_strong/room@2x.png 2x" alt="個室診療室">
               </p>
               <div class="strong3">
                 <p>3</p>
@@ -247,7 +255,7 @@
           <div class="flex_inner1_2">
             <div class="box4">
               <p>
-                  <img src="./images/mobile/six_strong/class_b.png" srcset="./images/mobile/six_strong/class_b@2x.png 2x" alt="クラスB滅菌器">
+                <img src="./images/mobile/six_strong/class_b.png" srcset="./images/mobile/six_strong/class_b@2x.png 2x" alt="クラスB滅菌器">
               </p>
               <div class="strong4">
                 <p>4</p>
@@ -267,7 +275,7 @@
             <!-- /.box4 -->
             <div class="box5">
               <p>
-                  <img src="./images/mobile/six_strong/water.png" srcset="./images/mobile/six_strong/water@2x.png 2x" alt="殺菌水">
+                <img src="./images/mobile/six_strong/water.png" srcset="./images/mobile/six_strong/water@2x.png 2x" alt="殺菌水">
               </p>
               <div class="strong5">
                 <p>5</p>
@@ -287,7 +295,7 @@
             <!-- /.box5 -->
             <div class="box6">
               <p>
-                  <img src="./images/mobile/six_strong/vacuum.png" srcset="./images/mobile/six_strong/vacuum@2x.png 2x" alt="口腔外バキューム">
+                <img src="./images/mobile/six_strong/vacuum.png" srcset="./images/mobile/six_strong/vacuum@2x.png 2x" alt="口腔外バキューム">
               </p>
               <div class="strong6">
                 <p>6</p>
@@ -489,81 +497,81 @@
       </div>
       <!-- /.tel -->
       <section id="open_hour">
-                <div class="left">
-        <div class="logo2">
-          <picture>
-            <source media="(min-width: 768px)" srcset="./images/pc/logo_s@2x.png 2x">
-            <img src="./images/mobile/logo_s.png" srcset="./images/mobile/logo_s@2x.png 2x" alt="医院ロゴ">
-          </picture>
-        </div>
-        <!-- /.logo2 -->
-        <h2 class="clearfix">高橋歯科医院池袋<span>Takahashi Dental Clinic Ikebukuro</span></h2>
-        <div class="week">
-          <p class="caption">
-            <span class="font">診療時間</span>
-            <span>新患・急患随時受付</span>
-          </p>
-          <table>
-            <tbody>
-              <tr>
-                <th scope="col">&nbsp;</th>
-                <th scope="col">月</th>
-                <th scope="col">火</th>
-                <th scope="col">水</th>
-                <th scope="col">木</th>
-                <th scope="col">金</th>
-                <th scope="col">土</th>
-                <th scope="col">
-                  <p>日</p>
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  <p>10:00〜</p>
-                  <p>&nbsp;13:00</p>
-                </td>
-                <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
-                <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
-                <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
-                <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
-                <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
-                <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
-                <td class="line">ー</td>
-              </tr>
-              <tr>
-                <td>
-                  <p>14:30〜</p>
-                  <p>&nbsp;20:00</p>
-                </td>
-                <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
-                <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
-                <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
-                <td class="triangle">▲</td>
-                <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
-                <td class="triangle">▲</td>
-                <td class="line">ー</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="attention">
-            <p>休診日…日曜・祝日</p>
-            <p><span class="triangle">▲</span>…17<span class="colon">:</span>30まで</p>
-            <p>※最終受付は30分前までとなっております</p>
-            <p>※ご予約の方が優先となりますのでご了承ください</p>
+        <div class="left">
+          <div class="logo2">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./images/pc/logo_s@2x.png 2x">
+              <img src="./images/mobile/logo_s.png" srcset="./images/mobile/logo_s@2x.png 2x" alt="医院ロゴ">
+            </picture>
           </div>
-          <!-- /.attention -->
-          <div>
-            <a href="#">
-              <picture>
-                <source media="(min-width: 768px)" srcset="./images/pc/banner2@2x.png 2x">
-                <img src="./images/mobile/web_reservation.png" srcset="./images/mobile/web_reservation@2x.png 2x" alt="WEB予約">
-              </picture>
-            </a>
+          <!-- /.logo2 -->
+          <h2 class="clearfix">高橋歯科医院池袋<span>Takahashi Dental Clinic Ikebukuro</span></h2>
+          <div class="week">
+            <p class="caption">
+              <span class="font">診療時間</span>
+              <span>新患・急患随時受付</span>
+            </p>
+            <table>
+              <tbody>
+                <tr>
+                  <th scope="col">&nbsp;</th>
+                  <th scope="col">月</th>
+                  <th scope="col">火</th>
+                  <th scope="col">水</th>
+                  <th scope="col">木</th>
+                  <th scope="col">金</th>
+                  <th scope="col">土</th>
+                  <th scope="col">
+                    <p>日</p>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <p>10:00〜</p>
+                    <p>&nbsp;13:00</p>
+                  </td>
+                  <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
+                  <td class="line">ー</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>14:30〜</p>
+                    <p>&nbsp;20:00</p>
+                  </td>
+                  <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
+                  <td class="triangle">▲</td>
+                  <td><i class="fa fa-circle-o" aria-hidden="true"></i></td>
+                  <td class="triangle">▲</td>
+                  <td class="line">ー</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="attention">
+              <p>休診日…日曜・祝日</p>
+              <p><span class="triangle">▲</span>…17<span class="colon">:</span>30まで</p>
+              <p>※最終受付は30分前までとなっております</p>
+              <p>※ご予約の方が優先となりますのでご了承ください</p>
+            </div>
+            <!-- /.attention -->
+            <div>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./images/pc/banner2@2x.png 2x">
+                  <img src="./images/mobile/web_reservation.png" srcset="./images/mobile/web_reservation@2x.png 2x" alt="WEB予約">
+                </picture>
+              </a>
+            </div>
           </div>
+          <!-- /.week -->
         </div>
-        <!-- /.week -->
-      </div>
-      <!-- /.left -->
+        <!-- /.left -->
         <div class="month">
           <p class="caption">
             <span class="font">診療カレンダー</span>
@@ -684,43 +692,34 @@
     </main>
     <footer>
       <div class="footer_nav">
-        <ul class="main">
-          <ul>
+        <div class="main_wrapper">
+          <ul class="main">
             <li><a href="#">HOME</a></li>
             <li><a href="#">当院の特長</a></li>
-          </ul>
-          <ul>
             <li><a href="#">診療内容</a></li>
             <li><a href="#">医院紹介</a></li>
-          </ul>
-          <ul>
             <li><a href="#">ドクター紹介</a></li>
             <li><a href="#">アクセス</a></li>
           </ul>
-        </ul>
-        <ul class="sub">
-          <ul>
+          <!-- /.main -->
+        </div>
+        <!-- /.main_wrapper -->
+        <div class="sub_wrapper">
+          <ul class="sub">
             <li><a href="#">一般歯科</a></li>
             <li><a href="#">小児歯科</a></li>
-          </ul>
-          <ul>
             <li><a href="#">予防歯科</a></li>
             <li><a href="#">歯周病</a></li>
-          </ul>
-          <ul>
             <li><a href="#">矯正歯科</a></li>
             <li><a href="#">審美歯科</a></li>
-          </ul>
-          <ul>
             <li><a href="#">ホワイトニング</a></li>
             <li><a href="#">義歯（入れ歯）</a></li>
-          </ul>
-          <ul>
             <li><a href="#">インプラント</a></li>
             <li><a href="#">歯科口腔外科</a></li>
           </ul>
-        </ul>
-        <!-- /.sub -->
+          <!-- /.sub -->
+        </div>
+        <!-- /.sub_wrapper -->
       </div>
       <!-- /.footer_nav -->
       <div class="about">
@@ -748,6 +747,8 @@
   </div>
   <!-- /.wrapper -->
   <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="./js/bgslide.js"></script>
+  <script src="./js/slick.min.js"></script>
   <script src="./js/my_script.js"></script>
 </body>
 
