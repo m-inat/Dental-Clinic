@@ -77,14 +77,8 @@ $(function () {
     autoplaySpeed: 3000,
   });
 
-    $('.bg-slider').bgSwitcher({
+  $('.bg-slider').bgSwitcher({
       images: ['./images/pc/header.png', './images/pc/header2.png', './images/pc/header3.png'],
     });
 
-
-  // if ($(window).width() <= 768) {
-  //   $('header').removeClass('bg-slider');
-  // } else if ($(window).width() >= 768) {
-  //   $('header').addClass('bg-slider');
-  // };
 });
