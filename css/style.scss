@@ -267,14 +267,9 @@ header {
       display: none;
     }
 
-    .clear{
-      clear: both;
-    }
-
     .message {
       text-align: left;
       margin-left: 25%;
-      overflow: hidden;
     }
 
     .gradient {
@@ -349,6 +344,7 @@ header {
     }
 
     .picture {
+      clear: both;
 
       picture{
         display: none;
